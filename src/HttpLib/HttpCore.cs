@@ -688,6 +688,7 @@ namespace HttpLib
         {
             resultMode = 0;
             _success0 = action;
+            this.requestAsync();
             return this;
         }
 
@@ -715,6 +716,7 @@ namespace HttpLib
         {
             resultMode = 2;
             _success2 = action;
+            this.requestAsync();
             return this;
         }
 
@@ -1176,7 +1178,8 @@ namespace HttpLib
                     }
                     else if (_fail2 != null)
                     {
-                        _fail2((int)((err as WebException).Response as HttpWebResponse).StatusCode, err);
+                        HttpWebResponse response = (err as WebException).Response as HttpWebResponse;
+                        _fail2(response == null ? 0 : (int)response.StatusCode, err);
                     }
                     else if (_fail != null)
                     {

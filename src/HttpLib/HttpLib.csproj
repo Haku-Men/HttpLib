@@ -15,12 +15,13 @@ https://gitee.com/HakuMen/HttpLib | 码云
 		<PackageIcon>Logo.png</PackageIcon>
 		<RepositoryUrl>https://github.com/Haku-Men/HttpLib</RepositoryUrl>
 		<PackageLicenseFile></PackageLicenseFile>
-		<AssemblyVersion>1.0.6.0</AssemblyVersion>
-		<FileVersion>1.0.6.0</FileVersion>
-		<Version>1.0.6</Version>
+		<AssemblyVersion>1.0.6.2</AssemblyVersion>
+		<FileVersion>1.0.6.2</FileVersion>
+		<Version>1.0.6.2</Version>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>便捷的Http库</PackageTags>
-		<PackageReleaseNotes>新增了全局配置
+		<PackageReleaseNotes>修复了错误异常
+新增了全局配置
 新增了对POST数组参数的支持
 新增了Http代理
 新增了请求之前处理</PackageReleaseNotes>
